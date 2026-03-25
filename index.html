@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <meta property="og:title" content="MH Academy - নবী-রাসূলদের শিক্ষামূলক গল্প">
+    <meta property="og:description" content="শিশুদের জন্য নবী-রাসূলদের জীবনের ২০টি মজার ও শিক্ষামূলক ঘটনা।">
+    <meta property="og:image" content="icon-512x512.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <title>MH Academy | শিক্ষামূলক গল্প</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF9800">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="logo">
+            <h1>MH Academy</h1>
+            <p>আলোর পথে ছোট্ট কদম</p>
+        </div>
+        <button id="installAppBtn" class="blinking-btn" style="display: none;">App Install করুন</button>
+    </header>
+
+    <main>
+        <div class="intro-text">
+            <h2>নবী-রাসূলদের মজার ও শিক্ষামূলক গল্প</h2>
+            <p>নিচের কার্ডগুলোতে ক্লিক করে গল্পগুলো পড়ো এবং শিক্ষা নাও!</p>
+        </div>
+        
+        <div id="storyContainer" class="story-grid"></div>
+    </main>
+
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody" class="modal-body"></div>
+            <div class="moral-box">
+                <strong>💡 শিক্ষা:</strong> <span id="modalMoral"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
